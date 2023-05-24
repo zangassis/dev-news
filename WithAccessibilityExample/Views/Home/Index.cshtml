@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-8">Welcome to the Dev News</h1>
+</div>
+
+<style>
+    div.button {
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: black;
+        text-align: center;
+        padding: 10px;
+        margin: 50px;
+    }
+</style>
+
+<div class="text-center">
+    <h2 class="display-10">Join our mailing list</h2>
+    <p>
+        Sign up and follow the news from the dev world
+    </p>
+    <form name="CustomerInfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-primary">
+                    <label for="Name">Name</label>
+                  </div>
+                  <div class="col-8">
+                    <input type="text" id="Name" required>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-4 text-primary">
+                    <label for="Email">E-mail</label>
+                </div>
+                <div class="col-8">
+                    <input type="text" id="Email" required>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#" onclick="document.getElementById('CustomerInfo').Submit();">
+                    Submit
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<p style="font-size: 30px"><b>All about programming</b></p>
+<p class="text-muted">
+    <h2>Here you will find the best content about current technology</h2><br><br>
+</p>
+
+<div class="text-center">
+    <img width="120" src="https://raw.githubusercontent.com/zangassis/dev-news/main/assets/dev-news-icon.jpg" alt="Dev News icon">
+</div>
+
+<p style="font-size: 30px"><b>Main topics</b></p>
+<p class="text-muted">
+    - ASP.NET Core<br>
+    - Web development<br>
+    - .NET
+</p>
+
+<p style="font-size: 30px"><h2>We take your privacy seriously!</h2></p>
+<p class="text-muted">
+    We care about your privacy.<br><br>
+    Please visit our <a href="/Privacy">privacy policy</a> for more information.
+</p>

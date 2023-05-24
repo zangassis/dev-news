@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-8">Welcome to the Dev News</h1>
+</div>
+
+<style>
+    div.button {
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: lightgray;
+        text-align: center;
+        padding: 10px;
+        margin: 50px;
+    }
+</style>
+
+<div class="text-center">
+    <h2 class="display-10">Join our mailing list</h2>
+    <p>
+        Sign up and follow the news from the dev world
+    </p>
+    <form name="CustomerInfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-black-50">
+                    Name
+                  </div>
+                  <div class="col-8">
+                    <input type="text" id="Name">
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-4 text-black-50">
+                    E-mail
+                </div>
+                <div class="col-8">
+                    <input type="text" id="Email">
+                </div>
+            </div>
+            <div class="button">
+                <a href="#" onclick="document.getElementById('CustomerInfo').Submit();">
+                    Submit
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<p style="font-size: 30px"><b>All about programming</b></p>
+<p class="bg-light text-muted">
+    Here you will find the best content about current technology<br><br>
+</p>
+
+<div class="text-center">
+    <img width="120" src="https://raw.githubusercontent.com/zangassis/dev-news/main/assets/dev-news-icon.jpg">
+</div>
+
+<p style="font-size: 30px"><b>Main topics</b></p>
+<p class="bg-light text-muted">
+    - ASP.NET Core<br>
+    - Web development<br>
+    - .NET
+</p>
+
+<p style="font-size: 30px"><b>We take your privacy seriously!</b></p>
+<p class="bg-light text-muted">
+    We care about your privacy.<br><br>
+    Want to know more? <a href="/Privacy">Click here.</a>
+</p>
